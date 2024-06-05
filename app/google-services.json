@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678547153689",
+    "project_id": "universitysearch-43397",
+    "storage_bucket": "universitysearch-43397.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678547153689:android:62fa93911596ed31719b88",
+        "android_client_info": {
+          "package_name": "com.example.universitysearch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArjbs9tr6cxxzHwiAvHm3f7LVrm1DinLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
