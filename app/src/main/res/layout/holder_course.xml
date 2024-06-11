@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCourseLower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gdlineCourseLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gdlineCourseLRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gdlineCourseLMid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.30" />
+
+            <TextView
+                android:id="@+id/textDesEligibility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_table_text"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/textDesExam"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintTop_toBottomOf="@+id/imageSave" />
+
+            <TextView
+                android:id="@+id/textEligibility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_table_text"
+                android:text="Eligibility"
+                app:layout_constraintBottom_toTopOf="@+id/textExam"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLeft"
+                app:layout_constraintTop_toBottomOf="@+id/imageSave" />
+
+            <TextView
+                android:id="@+id/textDesExam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/textDesFees"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintTop_toBottomOf="@+id/textDesEligibility" />
+
+            <TextView
+                android:id="@+id/textExam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="Exam"
+                app:layout_constraintBottom_toTopOf="@+id/textFees"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLeft"
+                app:layout_constraintTop_toBottomOf="@+id/textEligibility" />
+
+            <TextView
+                android:id="@+id/textDesFees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/textDesPlacement"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintTop_toBottomOf="@+id/textDesExam" />
+
+            <TextView
+                android:id="@+id/textFees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="Fees"
+                app:layout_constraintBottom_toTopOf="@+id/textPlacement"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLeft"
+                app:layout_constraintTop_toBottomOf="@+id/textExam" />
+
+            <TextView
+                android:id="@+id/textDesPlacement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/textDesSubCourse"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintTop_toBottomOf="@+id/textDesFees" />
+
+            <TextView
+                android:id="@+id/textPlacement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="Placement"
+                app:layout_constraintBottom_toTopOf="@+id/textSubCourse"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLeft"
+                app:layout_constraintTop_toBottomOf="@+id/textFees" />
+
+            <TextView
+                android:id="@+id/textDesSubCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintTop_toBottomOf="@+id/textDesPlacement" />
+
+            <TextView
+                android:id="@+id/textSubCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_table_text"
+                android:text="Sub Courses"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLMid"
+                app:layout_constraintStart_toStartOf="@+id/gdlineCourseLeft"
+                app:layout_constraintTop_toBottomOf="@+id/textPlacement" />
+
+            <ImageView
+                android:id="@+id/imageSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/gdlineCourseLRight"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_save_outline" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardCourseUpper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/textCourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_drop_down" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="left" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

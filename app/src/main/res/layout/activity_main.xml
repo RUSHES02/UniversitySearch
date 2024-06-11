@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/textName"
+        android:id="@+id/textEntName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textImg"
+        app:layout_constraintBottom_toTopOf="@+id/textEntImg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="Name"
@@ -19,18 +19,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/textImg"
+        android:id="@+id/textEntImg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textState"
+        app:layout_constraintBottom_toTopOf="@+id/textEntState"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="img"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textName" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntName" />
 
     <EditText
-        android:id="@+id/textCity"
+        android:id="@+id/textEntCity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="city"
@@ -38,46 +38,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRank" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntRank" />
 
     <EditText
-        android:id="@+id/textState"
+        android:id="@+id/textEntState"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textRank"
+        app:layout_constraintBottom_toTopOf="@+id/textEntRank"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="state"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textImg" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntImg" />
 
     <EditText
-        android:id="@+id/textRank"
+        android:id="@+id/textEntRank"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textCity"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="rank"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textState" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntState" />
 
     <ImageView
         android:id="@+id/imageAddCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseName"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCity"
+        app:layout_constraintTop_toBottomOf="@+id/textEntCity"
         app:srcCompat="@drawable/ic_add_24" />
 
     <EditText
-        android:id="@+id/textCourseName"
+        android:id="@+id/textEntCourseName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Course Name"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseEligibility"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseEligibility"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,51 +85,51 @@
 
 
     <EditText
-        android:id="@+id/textCourseEligibility"
+        android:id="@+id/textEntCourseEligibility"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseExam"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseExam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="Course Eligibility"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCourseName" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCourseName" />
 
     <EditText
-        android:id="@+id/textCourseExam"
+        android:id="@+id/textEntCourseExam"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textCoursePlacement"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCoursePlacement"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="Course Exam"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCourseEligibility" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCourseEligibility" />
 
     <EditText
-        android:id="@+id/textCoursePlacement"
+        android:id="@+id/textEntCoursePlacement"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseFees"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseFees"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="course Placement"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCourseExam" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCourseExam" />
 
     <EditText
-        android:id="@+id/textCourseFees"
+        android:id="@+id/textEntCourseFees"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseSubCourses"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseSubCourses"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="Course Fees"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCoursePlacement" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCoursePlacement" />
 
     <EditText
-        android:id="@+id/textCourseSubCourses"
+        android:id="@+id/textEntCourseSubCourses"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -137,7 +137,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         android:hint="Sub Courses"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCourseFees" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCourseFees" />
 
     <Button
         android:id="@+id/buttonAdd"
@@ -146,10 +146,10 @@
         android:layout_marginTop="6dp"
         android:layout_marginBottom="2dp"
         android:text="Add"
-        app:layout_constraintBottom_toTopOf="@+id/textCourseName"
+        app:layout_constraintBottom_toTopOf="@+id/textEntCourseName"
         app:layout_constraintEnd_toStartOf="@+id/imageAddCourse"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCity" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntCity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

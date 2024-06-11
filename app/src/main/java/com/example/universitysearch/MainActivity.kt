@@ -25,33 +25,32 @@ class MainActivity : AppCompatActivity() {
 
         binding.imageAddCourse.setOnClickListener{
             val course = Course(
-                name = binding.textCourseName.text.toString(),
-                eligibility = binding.textCourseEligibility.text.toString(),
-                exams = binding.textCourseExam.text.toString(),
-                placement = binding.textCoursePlacement.text.toString(),
-                fees = binding.textCourseFees.text.toString(),
-                subCoures = binding.textCourseSubCourses.text.toString()
+                name = binding.textEntCourseName.text.toString(),
+                eligibility = binding.textEntCourseEligibility.text.toString(),
+                exams = binding.textEntCourseExam.text.toString(),
+                placement = binding.textEntCoursePlacement.text.toString(),
+                fees = binding.textEntCourseFees.text.toString(),
+                subCourses = binding.textEntCourseSubCourses.text.toString()
                 )
 
             courses.add(course)
 
-            binding.textCourseName.text.clear()
-            binding.textCourseEligibility.text.clear()
-            binding.textCourseExam.text.clear()
-            binding.textCoursePlacement.text.clear()
-            binding.textCourseFees.text.clear()
-            binding.textCourseSubCourses.text.clear()
+            binding.textEntCourseEligibility.text.clear()
+            binding.textEntCourseExam.text.clear()
+            binding.textEntCoursePlacement.text.clear()
+            binding.textEntCourseFees.text.clear()
+            binding.textEntCourseSubCourses.text.clear()
         }
 
         binding.buttonAdd.setOnClickListener{
 
 
             val university = University(
-                name = binding.textName.text.toString(),
-                image = binding.textImg.text.toString(),
-                city = binding.textCity.text.toString(),
-                state = binding.textState.text.toString(),
-                naac = binding.textRank.text.toString(),
+                name = binding.textEntName.text.toString(),
+                image = binding.textEntImg.text.toString(),
+                city = binding.textEntCity.text.toString(),
+                state = binding.textEntState.text.toString(),
+                naac = binding.textEntRank.text.toString(),
                 courses = courses
             )
 
@@ -59,17 +58,17 @@ class MainActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     Log.d("university", "added")
 
-                    binding.textName.text.clear()
-                    binding.textImg.text.clear()
-                    binding.textCity.text.clear()
-                    binding.textState.text.clear()
-                    binding.textRank.text.clear()
-                    binding.textCourseName.text.clear()
-                    binding.textCourseEligibility.text.clear()
-                    binding.textCourseExam.text.clear()
-                    binding.textCoursePlacement.text.clear()
-                    binding.textCourseFees.text.clear()
-                    binding.textCourseSubCourses.text.clear()
+                    binding.textEntName.text.clear()
+                    binding.textEntImg.text.clear()
+                    binding.textEntCity.text.clear()
+                    binding.textEntState.text.clear()
+                    binding.textEntRank.text.clear()
+                    binding.textEntCourseName.text.clear()
+                    binding.textEntCourseEligibility.text.clear()
+                    binding.textEntCourseExam.text.clear()
+                    binding.textEntCoursePlacement.text.clear()
+                    binding.textEntCourseFees.text.clear()
+                    binding.textEntCourseSubCourses.text.clear()
 
                     courses.clear()
                 }
